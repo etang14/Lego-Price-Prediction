@@ -6,6 +6,10 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 
 
 def merge_data(file1, file2):
+    """
+    Script to merge two Lego data files and return a pandas dataframe while also writing results
+    to a new .csv
+    """
     df1 = pd.read_csv(file1)
     df1.dropna(subset=['USD_MSRP', 'Current_Price'], inplace=True)
     df1.drop_duplicates(["Set_ID"], inplace=True)
@@ -30,6 +34,9 @@ def merge_data(file1, file2):
     return res_df
 
 def get_data(filename, years, xgb_=True):
+    """
+    Reads a .csv of Lego data, cleans and preprocesses data for training and visualization.
+    """
     df = pd.read_csv(filename)
     df.drop(["lastUpdated", "Owned"], axis=1, inplace=True)
     # drop sets without price data and ratings

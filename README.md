@@ -14,7 +14,7 @@ into the ability of modern machine learning methods such as regression, ensemble
 models to confidently predict a Lego product’s current pricing.
 
 ## Contents
-`data.ipynb` contains data exploration and visualizations used to guide model training and testing
-`main.py` can be run to generate model results and build model visualizations
-`models.py` contains models used for this project 
-`preprocessing` scripts used for merging data from various sources and cleaning
+`data.ipynb` contains data exploration and visualizations used to guide model training and testing  
+`main.py` can be run to generate model results and build model visualizations  
+`models.py` contains models used for this project  
+`preprocessing` scripts used for merging data from various sources and cleaning  

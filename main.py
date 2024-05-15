@@ -105,4 +105,6 @@ def main(model_choice, grid=False):
 
 if __name__ == '__main__':
     #merge_data("LEGO_Data/sets.csv", "LEGO_Data/lego_final_data.xlsx")
+    # run main with "lasso", "rf", "xgb", "dense" for each model
+    # running with grid=True will start grid search for best xgb hyperparameters
     main("xgb", grid=False)
